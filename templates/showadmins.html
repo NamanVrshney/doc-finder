@@ -1,0 +1,21 @@
+
+
+
+{% extends 'adminmaster.html' %}
+
+{% block m1 %}
+
+<h1>Admins</h1>
+
+{% for row in result %}
+    <h3>Name : {{ row[0] }}</h3>
+    <p>
+        Address : {{ row[1] }}<br />
+        Contact : {{ row[2] }}<br />
+        Email : {{ row[3] }}<br />
+
+    </p>
+{% endfor %}
+
+
+{% endblock %}
